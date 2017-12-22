@@ -4,7 +4,7 @@ return array (
 				'relate_to' => array (
 						'Pluf_Tenant',
 						'DM_Asset',
-						'Pluf_User'
+						'User'
 				) 
 		),
 		'DM_Asset' => array (
@@ -14,7 +14,7 @@ return array (
 		),
 		'DM_Plan' => array (
 				'relate_to' => array (
-						'Pluf_User',
+						'User',
 						'Pluf_Tenant'
 				) 
 		) 
