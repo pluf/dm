@@ -72,7 +72,7 @@ class DM_Plan extends Pluf_Model {
 				// relations
 				'user' => array (
 						'type' => 'Pluf_DB_Field_Foreignkey',
-						'model' => 'Pluf_User',
+						'model' => 'User',
 						'blank' => false,
 						'readable' => false,	
 						'editable' => false,

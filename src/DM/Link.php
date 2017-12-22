@@ -65,7 +65,7 @@ class DM_Link extends Pluf_Model
             ),
             'user' => array(
                 'type' => 'Pluf_DB_Field_Foreignkey',
-                'model' => 'Pluf_User',
+                'model' => 'User',
                 'blank' => false,
                 'readable' => false,
                 'editable' => false,
