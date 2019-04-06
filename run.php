@@ -37,8 +37,8 @@
 define('PHPUnit_MAIN_METHOD', 'PHPUnit_TextUI_Command::main');
 
 $files = array(
-        __DIR__ . '/vendor/autoload.php',
-        __DIR__ . '/../../autoload.php'
+    __DIR__ . '/vendor/autoload.php',
+    __DIR__ . '/../../autoload.php'
 );
 
 foreach ($files as $file) {
@@ -51,9 +51,9 @@ foreach ($files as $file) {
 
 if (! defined('PHPUNIT_COMPOSER_INSTALL')) {
     die(
-            'You need to set up the project dependencies using the following commands:' .
-                     PHP_EOL . 'curl -s http://getcomposer.org/installer | php' .
-                     PHP_EOL . 'php composer.phar install' . PHP_EOL);
+        'You need to set up the project dependencies using the following commands:' .
+        PHP_EOL . 'curl -s http://getcomposer.org/installer | php' .
+        PHP_EOL . 'php composer.phar install' . PHP_EOL);
 }
 
 PHPUnit_TextUI_Command::main();
