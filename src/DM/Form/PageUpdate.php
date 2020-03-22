@@ -36,7 +36,7 @@ class CMS_Form_PageUpdate extends Pluf_Form
     function update($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the page from an invalid form');
+            throw new \Pluf\Exception('cannot save the page from an invalid form');
         }
         // update the page
         $this->page->setFromFormData($this->cleaned_data);

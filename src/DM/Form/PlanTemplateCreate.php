@@ -68,7 +68,7 @@ class DM_Form_PlanTemplateCreate extends Pluf_Form
     function save ($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the plan template from an invalid form');
+            throw new \Pluf\Exception('cannot save the plan template from an invalid form');
         }
         // Create the plan template
         $plantemplate = new DM_PlanTemplate();

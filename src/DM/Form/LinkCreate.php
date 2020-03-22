@@ -43,7 +43,7 @@ class DM_Form_LinkCreate extends Pluf_Form
 	function save ($commit = true)
 	{
 		if (! $this->isValid()) {
-			throw new Pluf_Exception('cannot save the link from an invalid form');
+		    throw new \Pluf\Exception('cannot save the link from an invalid form');
 		}
 		// Create the link
 		$link = new DM_Link();

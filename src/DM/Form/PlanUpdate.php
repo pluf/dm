@@ -100,7 +100,7 @@ class DM_Form_PlanUpdate extends Pluf_Form
     function update($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the plan from an invalid form');
+            throw new \Pluf\Exception('cannot save the plan from an invalid form');
         }
         // update the plan
         $this->plan->setFromFormData($this->cleaned_data);

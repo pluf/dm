@@ -100,7 +100,7 @@ class DM_Form_AssetUpdate extends Pluf_Form
     function update($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the asset from an invalid form');
+            throw new \Pluf\Exception('cannot save the asset from an invalid form');
         }
         // update the asset
         $this->asset->setFromFormData($this->cleaned_data);

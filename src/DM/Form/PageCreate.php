@@ -30,7 +30,7 @@ class CMS_Form_PageCreate extends Pluf_Form
     function save($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the page from an invalid form');
+            throw new \Pluf\Exception('cannot save the page from an invalid form');
         }
         // Create the page
         $page = new CMS_Page();

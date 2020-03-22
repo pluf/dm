@@ -28,7 +28,7 @@ class DM_Form_PlanCreate extends Pluf_Form
     function save ($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save the plan from an invalid form');
+            throw new \Pluf\Exception('cannot save the plan from an invalid form');
         }
         // Create the plan
         $plan = new DM_Plan();

@@ -69,7 +69,7 @@ class DM_Form_PlanTemplateUpdate extends Pluf_Form
     function update($commit = true)
     {
         if (! $this->isValid()) {
-            throw new Pluf_Exception('cannot save(update) the plan template from an invalid form');
+            throw new \Pluf\Exception('cannot save(update) the plan template from an invalid form');
         }
         // update the asset
         $this->plantemplate->setFromFormData($this->cleaned_data);
