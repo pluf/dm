@@ -12,66 +12,66 @@ class DM_Plan extends Pluf_Model {
 		$this->_model = 'DM_Plan';
 		$this->_a ['cols'] = array (
 				'id' => array (
-						'type' => 'Pluf_DB_Field_Sequence',
+						'type' => 'Sequence',
 						'blank' => false,
 						'editable' => false,
 						'readable' => true
 				),
 				'period' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'size' => 250,
 						'editable' => false,
 						'readable' => true
 				),				
 				'expiry' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'size' => 250,
 						'editable' => false,
 						'readable' => true
 				),
 				'max_count' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'size' => 250,
 						'editable' => false,
 						'readable' => true
 				),
 				'remain_count' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'size' => 250,
 						'editable' => false,
 						'readable' => true
 				),				
 				'max_volume' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'editable' => false,
 						'readable' => true
 				),
 				'remain_volume' => array (
-						'type' => 'Pluf_DB_Field_Integer',
+						'type' => 'Integer',
 						'blank' => false,
 						'editable' => false,
 						'readable' => true
 				),
 				'price' => array(
-						'type' =>'Pluf_DB_Field_Integer',
+						'type' =>'Integer',
 						'blank' => false,
 						'editable' => false,
 						'readable' => true
 				),
 				'active' => array (
-						'type' => 'Pluf_DB_Field_Boolean',
+						'type' => 'Boolean',
 						'blank' => false,
 						'editable' => false,
 						'readable' => true
 				),
 				// relations
 				'user' => array (
-						'type' => 'Pluf_DB_Field_Foreignkey',
+						'type' => 'Foreignkey',
 						'model' => 'User',
 						'blank' => false,
 						'readable' => false,	
@@ -79,7 +79,7 @@ class DM_Plan extends Pluf_Model {
 						'relate_name' => 'user'
 				),
 				'payment' => array(
-						'type' => 'Pluf_DB_Field_Foreignkey',
+						'type' => 'Foreignkey',
 						'model' => 'Bank_Receipt',
 						'blank' => false,
 						'editable' => false,

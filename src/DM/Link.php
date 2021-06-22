@@ -15,40 +15,40 @@ class DM_Link extends Pluf_Model
         $this->_model = 'DM_Link';
         $this->_a['cols'] = array(
             'id' => array(
-                'type' => 'Pluf_DB_Field_Sequence',
+                'type' => 'Sequence',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'secure_link' => array(
-                'type' => 'Pluf_DB_Field_Varchar',
+                'type' => 'Varchar',
                 'blank' => false,
                 'size' => 50,
                 'editable' => false,
                 'readable' => true
             ),
             'expiry' => array(
-                'type' => 'Pluf_DB_Field_Datetime',
+                'type' => 'Datetime',
                 'blank' => false,
                 'size' => 50,
                 'editable' => false,
                 'readable' => true
             ),
             'download' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'size' => 50,
                 'editable' => false,
                 'readable' => true
             ),
             'creation_dtime' => array(
-                'type' => 'Pluf_DB_Field_Datetime',
+                'type' => 'Datetime',
                 'blank' => true,
                 'editable' => true,
                 'readable' => true
             ),
             'modif_dtime' => array(
-                'type' => 'Pluf_DB_Field_Datetime',
+                'type' => 'Datetime',
                 'blank' => true,
                 'editable' => true,
                 'readable' => true
@@ -56,7 +56,7 @@ class DM_Link extends Pluf_Model
             
             // relations
             'asset' => array(
-                'type' => 'Pluf_DB_Field_Foreignkey',
+                'type' => 'Foreignkey',
                 'model' => 'DM_Asset',
                 'blank' => false,
                 'editable' => false,
@@ -64,7 +64,7 @@ class DM_Link extends Pluf_Model
                 'relate_name' => 'asset'
             ),
             'user' => array(
-                'type' => 'Pluf_DB_Field_Foreignkey',
+                'type' => 'Foreignkey',
                 'model' => 'User',
                 'blank' => false,
                 'readable' => false,

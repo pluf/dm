@@ -15,58 +15,58 @@ class DM_PlanTemplate extends Pluf_Model
         $this->_model = 'DM_Plantemplate';
         $this->_a['cols'] = array(
             'id' => array(
-                'type' => 'Pluf_DB_Field_Sequence',
+                'type' => 'Sequence',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'description' => array(
-                'type' => 'Pluf_DB_Field_Varchar',
+                'type' => 'Varchar',
                 'blank' => false,
                 'size' => 2500,
                 'editable' => true,
                 'readable' => true
             ),
             'label' => array(
-                'type' => 'Pluf_DB_Field_Varchar',
+                'type' => 'Varchar',
                 'blank' => false,
                 'size' => 250,
                 'editable' => true,
                 'readable' => true
             ),
             'period' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'max_count' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'max_volume' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'content_name' => array(
-                'type' => 'Pluf_DB_Field_Varchar',
+                'type' => 'Varchar',
                 'blank' => false,
                 'size' => 500,
                 'editable' => true,
                 'readable' => true
             ),
             'price' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'editable' => false,
                 'readable' => true
             ),
             'off' => array(
-                'type' => 'Pluf_DB_Field_Integer',
+                'type' => 'Integer',
                 'blank' => false,
                 'editable' => true,
                 'readable' => true
